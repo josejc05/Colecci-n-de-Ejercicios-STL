@@ -23,6 +23,10 @@ namespace Matematicas {
             return 0;
         }
     }
+
+    int cuadrado(int a) {
+        return a * a;
+    }
 }
 
 int main() {
@@ -32,7 +36,8 @@ int main() {
 
     int divisor = 3;
     cout << "Division: " << Matematicas::division(5, divisor) << endl;
+    int base = 4;
+    cout << "Cuadrado: " << Matematicas::cuadrado(base) << endl;
 
     return 0;
 }
-
