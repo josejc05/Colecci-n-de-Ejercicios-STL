@@ -1,6 +1,6 @@
 #include <iostream>
 #include "circulo2.cpp"
-#include "triangulo.cpp"
+#include "triangulo2.cpp"
 #include "rectangulo.cpp"
 #include "cuadrado.cpp"
 #include "trapecio.cpp"
