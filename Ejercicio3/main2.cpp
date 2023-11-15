@@ -1,8 +1,8 @@
 #include <iostream>
 #include "circulo2.cpp"
 #include "triangulo2.cpp"
-#include "rectangulo.cpp"
-#include "cuadrado.cpp"
+#include "rectangulo2.cpp"
+#include "cuadrado2.cpp"
 #include "trapecio.cpp"
 
 int main() {
