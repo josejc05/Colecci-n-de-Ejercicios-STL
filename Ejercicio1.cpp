@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -27,6 +28,15 @@ namespace Matematicas {
     int cuadrado(int a) {
         return a * a;
     }
+
+    float raizCuadrada(int a) {
+        if (a >= 0) {
+            return sqrt(static_cast<float>(a));
+        } else {
+            cerr << "Error: No se puede calcular la raíz cuadrada de un número negativo." << endl;
+            return 0;
+        }
+    }
 }
 
 int main() {
@@ -36,8 +46,12 @@ int main() {
 
     int divisor = 3;
     cout << "Division: " << Matematicas::division(5, divisor) << endl;
+
     int base = 4;
     cout << "Cuadrado: " << Matematicas::cuadrado(base) << endl;
+
+    int radicando = 9;
+    cout << "Raiz Cuadrada: " << Matematicas::raizCuadrada(radicando) << endl;
 
     return 0;
 }
