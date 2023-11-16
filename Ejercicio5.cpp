@@ -26,3 +26,20 @@ int main() {
         cout << num << " ";
     }
     cout << endl;
+
+    map<string, int> edades;
+    edades["Jose"] = 25;
+    edades["Maria"] = 30;
+
+    string nombre = "Jose";
+    auto iter = edades.find(nombre);
+    if (iter != edades.end()) {
+        cout << "La edad de " << nombre << " es " << iter->second << " anos." << endl;
+    } else {
+        cout << nombre << " no encontrado en el map." << endl;
+    }
+
+    cout << "Map antes de borrar a Jose:" << endl;
+    for (const auto& par : edades) {
+        cout << par.first << ": " << par.second << endl;
+    }
