@@ -15,3 +15,14 @@ int main() {
         cout << num << " ";
     }
     cout << endl;
+
+    auto it = find(numeros.begin(), numeros.end(), 3);
+    if (it != numeros.end()) {
+        numeros.erase(it);
+    }
+
+    cout << "Vector despues de eliminar el 3: ";
+    for (const auto& num : numeros) {
+        cout << num << " ";
+    }
+    cout << endl;
