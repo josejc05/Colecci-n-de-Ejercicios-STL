@@ -43,3 +43,19 @@ int main() {
     for (const auto& par : edades) {
         cout << par.first << ": " << par.second << endl;
     }
+
+    edades.erase("Jose");
+
+    cout << "Map despues de borrar a Jose:" << endl;
+    for (const auto& par : edades) {
+        cout << par.first << ": " << par.second << endl;
+    }
+
+    set<int> conjunto {1, 2, 3, 4, 5};
+    conjunto.insert(6);
+
+    cout << "Set despues de agregar 6: ";
+    for (const auto& num : conjunto) {
+        cout << num << " ";
+    }
+    cout << endl;
