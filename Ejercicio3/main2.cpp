@@ -3,7 +3,7 @@
 #include "triangulo2.cpp"
 #include "rectangulo2.cpp"
 #include "cuadrado2.cpp"
-#include "trapecio.cpp"
+#include "trapecio2.cpp"
 
 int main() {
     Geometria::Circulo circulo(5);

@@ -1,5 +1,3 @@
-// cuadrado.cpp
-
 #include <iostream>
 #include <cmath>
 
