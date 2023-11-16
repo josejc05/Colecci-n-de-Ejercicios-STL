@@ -59,3 +59,22 @@ int main() {
         cout << num << " ";
     }
     cout << endl;
+
+    int valorBuscado = 3;
+    auto iterSet = conjunto.find(valorBuscado);
+    if (iterSet != conjunto.end()) {
+        cout << "El valor " << valorBuscado << " se encuentra en el set." << endl;
+    } else {
+        cout << "El valor " << valorBuscado << " no se encuentra en el set." << endl;
+    }
+
+    conjunto.erase(1);
+
+    cout << "Set despues de borrar el 1:" << endl;
+    for (const auto& num : conjunto) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
